@@ -1,0 +1,94 @@
+.profile_section {
+
+    .container {
+        max-width: 1000px;
+        padding-bottom: 20px;
+
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .info {
+                padding: 20px 40px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                .profile_icon {
+                    width: 100px;
+                    height: 100px;
+                    padding: 0;
+
+                    img {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+
+                .userName {
+                    text-align: center;
+                    margin-top: 30px;
+                    font-size: 36px;
+
+                    @media (max-width:480px) {
+                        font-size: 28px;
+                    }
+                }
+
+                .user_id {
+                    color: rgb(142, 142, 142);
+                    margin-top: 10px;
+                }
+
+                .logout {
+                    margin-top: 20px;
+                }
+
+                .pins_btns {
+                    margin-top: 30px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    transition: 0.3s ease all;
+
+                    .pin_btn {
+                        padding: 7px 15px;
+
+                        &:hover {
+                            border-radius: 14px;
+                            background: rgb(214, 214, 214);
+                        }
+                    }
+
+                    .pin_btn.active {
+                        position: relative;
+
+                        &::after {
+                            position: absolute;
+                            content: "";
+                            width: 100%;
+                            height: 2px;
+                            background: #000;
+                            left: 0;
+                            bottom: -5px;
+                        }
+
+                        &:hover {
+                            background: none;
+                        }
+                    }
+                }
+
+                .posted_by {
+                    display: none;
+                }
+
+                .save {
+                    display: none;
+                }
+            }
+        }
+    }
+}

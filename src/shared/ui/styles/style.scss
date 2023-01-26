@@ -1,0 +1,149 @@
+// PFOFILE ICON
+
+.profile_icon {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 48px;
+    width: 48px;
+    padding: 4px 4px;
+    border-radius: 100%;
+
+    img {
+        width: 24px;
+        height: 24px;
+        display: block;
+        border-radius: 100%;
+        border: 1px solid rgba(0, 0, 0, 0);
+    }
+
+    &:hover {
+
+        img {
+            border: 1px solid black;
+        }
+
+        background: rgba(0, 0, 0, 0.06);
+    }
+}
+
+// LOGO
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    padding: 4px 16px;
+
+    img {
+        width: 24px;
+        height: 24px;
+        display: block;
+    }
+}
+
+// LOGO WHITE
+
+.logo_white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+
+    img {
+        width: 48px;
+        height: 48px;
+        display: block;
+    }
+}
+
+// BTNS
+
+.header_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 28px;
+
+    span {
+        @media (max-width:600px) {
+            display: none;
+        }
+    }
+}
+
+.header_btn.black {
+    @media (max-width:600px) {
+        height: 80%;
+        padding: 10px;
+        border-radius: 100%;
+    }
+
+    background: #000;
+    color: #fff;
+}
+
+.header_btn.white {
+    background: #fff;
+    color: #000;
+}
+
+.download {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background: #fff;
+    border-radius: 100%;
+    opacity: 0.65;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.save {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 7px 25px;
+    background: red;
+    border-radius: 20px;
+
+    &:hover {
+        background: darken(red, 15%);
+    }
+}
+
+.LogOutBtn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 15px 50px;
+    background: red;
+    border-radius: 40px;
+
+    &:hover {
+        background: darken(red, 15%);
+    }
+}
+
+///////////

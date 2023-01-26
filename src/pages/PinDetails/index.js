@@ -1,0 +1,1 @@
+export { PinDetails } from './components/PinDetails'

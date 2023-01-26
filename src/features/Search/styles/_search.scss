@@ -1,0 +1,41 @@
+.search_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(251, 251, 251);
+    color: #fff;
+    border-radius: 23px;
+    border: 2px solid red;
+    border-top: 2px solid rgb(238, 238, 238);
+    border-bottom: 2px solid rgb(238, 238, 238);
+    height: 48px;
+    width: 100%;
+
+    .search {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        .loupe {
+            fill: #767676;
+        }
+
+        input {
+            width: 100%;
+            color: #000;
+            background: none;
+            border: none;
+        }
+
+        input::placeholder {
+            color: #767676;
+        }
+
+        input:focus {
+            outline: none;
+        }
+    }
+
+
+
+}

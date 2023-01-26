@@ -1,0 +1,236 @@
+.pin_details_section {
+    height: 100vh;
+
+    .container {
+        max-width: 1000px;
+        // height: 100vh;
+        padding-bottom: 20px;
+
+        .pin_details {
+            border-radius: 24px;
+            box-shadow: 5px 5px 5px 5px rgba(201, 201, 201, 0.44);
+            height: 100%;
+            display: flex;
+
+            @media (max-width:768px) {
+                flex-direction: column;
+            }
+
+            .image {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+
+                img {
+                    border-top-left-radius: 24px;
+                    border-bottom-left-radius: 24px;
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+
+                    @media (max-width:768px) {
+                        border-radius: 24px;
+                    }
+                }
+            }
+
+            .details_block {
+                width: 50%;
+
+                @media (max-width:768px) {
+                    padding: 0 20px;
+                    width: 100%
+                }
+            }
+
+            .info {
+                padding: 20px 40px;
+                display: flex;
+                flex-direction: column;
+
+                &__btns {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .btns {
+                        display: flex;
+                        align-items: center;
+
+                        .download {
+                            font-size: 32px;
+                            opacity: 1;
+
+                            &:hover {
+                                background: rgb(148, 148, 148);
+                            }
+                        }
+
+                        .delete_btn {
+                            cursor: pointer;
+                            padding: 5px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            font-size: 32px;
+                            opacity: 1;
+
+                            &:hover {
+                                background: rgb(148, 148, 148);
+                            }
+                        }
+                    }
+                }
+
+                &__title {
+                    margin-top: 10px;
+                    font-size: 36px;
+                    font-weight: 700;
+                }
+
+                &__about {
+                    margin-top: 5px;
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+
+                &__postedBy {
+                    margin-top: 25px;
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+
+                    .profile_icon {
+                        width: 40px;
+                        height: 40px;
+                        padding: 0;
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+
+                    .userName {
+                        font-size: 18px;
+                    }
+                }
+
+                &__comments {
+                    margin-top: 30px;
+
+                    .comments {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .comment_block {
+                            display: flex;
+                            align-items: flex-start;
+                            gap: 10px;
+
+                            .profile {
+                                gap: 4px;
+                                display: flex;
+                                align-items: center;
+
+                                img {
+                                    cursor: pointer;
+                                    border-radius: 100%;
+                                    width: 20px;
+                                    height: 20px;
+                                    display: block;
+                                }
+
+                                .name {
+                                    cursor: pointer;
+                                    color: #000;
+                                    font-weight: 700;
+                                    transition: 0.2s ease all;
+
+                                    &:hover {
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+
+                            .comment {
+                                line-height: 120%;
+                                max-width: 250px;
+                                overflow-wrap: break-word;
+                            }
+                        }
+                    }
+
+
+                    .add_comment_block {
+                        margin-top: 20px;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        @media (max-width:480px) {
+                            flex-direction: column;
+                            align-items: flex-end;
+                        }
+
+                        .first {
+                            display: flex;
+                            align-items: center;
+                            gap: 4px;
+
+                            @media (max-width:480px) {
+                                gap: 10px;
+                                width: 100%;
+                            }
+
+                            .user_comment_image {
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 50%;
+                            }
+
+                            input {
+                                width: 100%;
+                                border: 1px solid rgb(85, 85, 85);
+                                outline: none;
+                                padding: 10px 20px;
+                                border-radius: 20px;
+                            }
+
+                            input:focus {
+                                padding: 10px 20px 50px 20px;
+                                border-radius: 14px;
+                            }
+                        }
+
+
+                        .add_comment_btn {
+
+                            cursor: pointer;
+                            padding: 5px 10px;
+                            border: 1px solid rgb(97, 97, 97);
+                            color: black;
+                            border-radius: 15px;
+
+                            @media (max-width:768px) {
+                                border-radius: 20px;
+                                padding: 10px 20px;
+                            }
+                        }
+
+                    }
+
+
+                }
+
+
+
+            }
+        }
+    }
+}

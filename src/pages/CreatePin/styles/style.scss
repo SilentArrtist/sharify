@@ -1,0 +1,152 @@
+.create_pin_section {
+    height: 100vh;
+
+    .container {
+        max-width: 1000px;
+        // height: 100vh;
+        padding-bottom: 20px;
+
+        .create_pin {
+            border-radius: 24px;
+            box-shadow: 5px 5px 5px 5px rgba(201, 201, 201, 0.44);
+            height: 100%;
+            min-height: 500px;
+            display: flex;
+
+            .create_block {
+                width: 50%;
+
+                &.image {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .load {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        margin-bottom: 15px;
+                    }
+
+                    .recomendation {
+                        color: rgb(148, 148, 148);
+                    }
+
+                    input {
+                        display: none;
+                    }
+
+                    .loaded_image {
+                        width: 100%;
+                        height: 100%;
+                        margin: 0;
+                        padding: 0;
+                        position: relative;
+
+                        img {
+                            border-top-left-radius: 24px;
+                            border-bottom-left-radius: 24px;
+                            display: block;
+                            width: 100%;
+                            height: auto;
+                            object-fit: cover;
+                        }
+
+                        .delete_btn {
+                            cursor: pointer;
+                            border-radius: 50%;
+                            position: absolute;
+                            right: 10px;
+                            bottom: 10px;
+
+                            svg {
+                                fill: red;
+                            }
+                        }
+                    }
+                }
+
+                &.info {
+
+                    padding: 20px 40px;
+                    gap: 10px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .info__textblock {
+                        display: flex;
+                        gap: 10px;
+                    }
+
+                    .info__title {
+                        margin-top: 10px;
+
+                        input {
+                            font-size: 36px;
+                        }
+                    }
+
+                    .info__postedBy {
+                        margin-top: 25px;
+                        padding: 0;
+                        display: flex;
+                        align-items: center;
+                        gap: 4px;
+
+                        .profile_icon {
+                            width: 40px;
+                            height: 40px;
+                            padding: 0;
+
+                            img {
+                                width: 40px;
+                                height: 40px;
+                            }
+                        }
+
+                        .userName {
+                            font-size: 18px;
+                        }
+                    }
+
+
+                    .info__about {
+                        margin-top: 5px;
+
+                        input {
+                            font-size: 24px;
+                        }
+                    }
+
+                    .info__create {
+                        margin: 20px 0;
+
+                        .btn {
+                            cursor: pointer;
+                            width: fit-content;
+                            border: 1px solid red;
+                            border-radius: 18px;
+                            background: red;
+                            padding: 10px 20px;
+                            color: #fff;
+                        }
+                    }
+
+                    input {
+                        padding: 5px;
+                        border: none;
+                        border-bottom: 1px solid black;
+                        outline: none;
+                    }
+                }
+            }
+
+
+
+
+
+
+        }
+    }
+}

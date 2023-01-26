@@ -1,0 +1,1 @@
+export { Pins } from './components/Pins'
